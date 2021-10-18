@@ -21,9 +21,9 @@ function App() {
       <Header/>
       <Switch>
         <Route exact path="/" render={(props) => <Home title={PAGE_TITLE_HOME} {...props} />} />
-        <Route path="/about" render={(props) => <About title={PAGE_TITLE_ABOUT} {...props} />} />
-        <Route path="/contact" render={(props) => <Contact title={PAGE_TITLE_CONTACT} {...props} />} />
-        <Route path="/info" render={(props) => <Info title={PAGE_TITLE_INFO} {...props} />} />
+        <Route exact path="/about" render={(props) => <About title={PAGE_TITLE_ABOUT} {...props} />} />
+        <Route exact path="/contact" render={(props) => <Contact title={PAGE_TITLE_CONTACT} {...props} />} />
+        <Route exact path="/info" render={(props) => <Info title={PAGE_TITLE_INFO} {...props} />} />
       </Switch>
     </Router>
   );
