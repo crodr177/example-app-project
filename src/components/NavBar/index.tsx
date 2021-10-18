@@ -19,9 +19,9 @@ const NavBar = (): JSX.Element => {
     <div id="navBarContainer">
       <ul id="links">
         <li><Link to="/" className="link" href="_blank">Home</Link></li>
-        <li><Link to="/example-app-project/about" className="link" >About</Link></li>
-        <li><Link to="/example-app-project/contact" className="link" >Contact</Link></li>
-        <li><Link to="/example-app-project/info" className="link" >Info</Link></li>
+        <li><Link to="/about" className="link" >About</Link></li>
+        <li><Link to="/contact" className="link" >Contact</Link></li>
+        <li><Link to="/info" className="link" >Info</Link></li>
       </ul>
       <FontAwesomeIcon id="burger" icon={faBars} onClick={toggleMenu}/>
       <div className={`dropdown-menu ${toggle ? "open" : "close"}`}>
@@ -30,13 +30,13 @@ const NavBar = (): JSX.Element => {
             <Link to="/" className="burger-menu-link" onClick={toggleMenu}>Home</Link>
           </li>
           <li className="burger-menu-li">
-            <Link to="/example-app-project/about" className="burger-menu-link" onClick={toggleMenu}>About</Link>
+            <Link to="/about" className="burger-menu-link" onClick={toggleMenu}>About</Link>
           </li>
           <li className="burger-menu-li">
-            <Link to="/example-app-project/contact" className="burger-menu-link" onClick={toggleMenu}>Contact</Link>
+            <Link to="/contact" className="burger-menu-link" onClick={toggleMenu}>Contact</Link>
           </li>
           <li className="burger-menu-li">
-            <Link to="/example-app-project/info" className="burger-menu-link" onClick={toggleMenu}>Info</Link>
+            <Link to="/info" className="burger-menu-link" onClick={toggleMenu}>Info</Link>
           </li>
         </ul>
       </div>

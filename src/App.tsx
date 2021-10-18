@@ -16,14 +16,14 @@ import {
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <title>{APP_TITLE}</title>
       <Header/>
       <Switch>
         <Route exact path="/" render={(props) => <Home title={PAGE_TITLE_HOME} {...props} />} />
-        <Route path="/example-app-project/about" render={(props) => <About title={PAGE_TITLE_ABOUT} {...props} />} />
-        <Route path="/example-app-project/contact" render={(props) => <Contact title={PAGE_TITLE_CONTACT} {...props} />} />
-        <Route path="/example-app-project/info" render={(props) => <Info title={PAGE_TITLE_INFO} {...props} />} />
+        <Route path="/about" render={(props) => <About title={PAGE_TITLE_ABOUT} {...props} />} />
+        <Route path="/contact" render={(props) => <Contact title={PAGE_TITLE_CONTACT} {...props} />} />
+        <Route path="/info" render={(props) => <Info title={PAGE_TITLE_INFO} {...props} />} />
       </Switch>
     </Router>
   );
