@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,11 +9,9 @@ import './styles.css';
 const NavBar = (): JSX.Element => {
   const [toggle, setToggle] = useState(false);
 
-  const toggleMenu = useCallback(() => {
+  const toggleMenu = () => {
     setToggle(!toggle);
-    console.log(toggle);
-  }, [toggle, setToggle]
-  );
+  };
 
   return (
     <div id="navBarContainer">
