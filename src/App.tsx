@@ -10,7 +10,6 @@ import {
   APP_TITLE, 
   PAGE_TITLE_ABOUT, 
   PAGE_TITLE_CONTACT, 
-  PAGE_TITLE_HOME, 
   PAGE_TITLE_INFO 
 } from './utils/constants';
 
@@ -20,7 +19,7 @@ function App() {
       <title>{APP_TITLE}</title>
       <Header/>
       <Switch>
-        <Route exact path="/" render={(props) => <Home title={PAGE_TITLE_HOME} {...props} />} />
+        <Route exact path="/" component={Home} />
         <Route path="/about" render={(props) => <About title={PAGE_TITLE_ABOUT} {...props} />} />
         <Route path="/contact" render={(props) => <Contact title={PAGE_TITLE_CONTACT} {...props} />} />
         <Route path="/info" render={(props) => <Info title={PAGE_TITLE_INFO} {...props} />} />

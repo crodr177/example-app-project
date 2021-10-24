@@ -22,6 +22,13 @@ a {
 }
 
 .page-container {
-  padding: 70px 15px 15px 15px;
   height: 1600px;
+  margin: 0;
+  padding: 70px 0px 0px 0px;
+  width: 100%;
+}
+
+.row-direction {
+  display: flex;
+  flex-direction: row;
 }
